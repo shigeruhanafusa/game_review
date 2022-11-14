@@ -10,6 +10,11 @@ Game Review
 
 # テスト用アカウント
 
+・Basic認証パスワード：2222<br>
+・Basic認証ID：admin<br>
+・メールアドレス：test@gmail.com<br>
+・パスワード：test1234<br>
+
 # 利用方法
 
 ### タイトル投稿
