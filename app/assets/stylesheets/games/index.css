@@ -6,9 +6,6 @@
   overflow: scroll;
 }
 
-.main-games {
-  
-}
 
 .game {
   display: flex;
@@ -20,8 +17,4 @@
 
 .genre {
   margin-right: 10vw;
-}
-
-.rating {
-
 }

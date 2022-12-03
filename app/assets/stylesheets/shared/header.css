@@ -2,10 +2,6 @@
   box-sizing: border-box;
 }
 
-.top-page-header {
-
-}
-
 .search-bar-contents {
   background-color: rgb(244, 217, 181);
   height: calc(110px);
@@ -60,8 +56,4 @@
 
 .search-form {
   padding-right: calc(30px);
-}
-
-.search-button {
-  
 }
