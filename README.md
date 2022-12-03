@@ -58,3 +58,51 @@ SNSの連携やYoutubeと連携してPVを引っ張ってきたりしていき�
 ・Java<br>
 ・VScode/Eclipse<br>
 ・Github<br>
+
+# usersテーブル
+
+| Column              | Type       | Options                        |
+| ------------------- | ---------- | ------------------------------ |
+| name                | string     | null: false                    |
+| encrypted_password  | string     | null: false                    |
+| email               | string     | null: false, unique: true      |
+
+### Association
+has_many :items
+
+
+
+# itemsテーブル
+| Column              | Type       | Options                        |
+| ------------------- | ---------- | ------------------------------ |
+| title         | string    | null: false                    |
+| text          | text      | null: false                    |
+| user                | references | null: false, foreign_key: true |
+| rating                | references | null: false, foreign_key: true |
+| category                | references | null: false, foreign_key: true |
+
+### Association
+belongs_to :user
+belongs_to :rating
+belongs_to :category
+
+
+
+# ratingsテーブル
+| Column              | Type       | Options                        |
+| ------------------- | ---------- | ------------------------------ |
+| name         | string     | null: false                    |
+| rank             | integer    | null: false                    |
+
+
+### Association
+has_many :items
+
+
+# categoriesテーブル
+| Column              | Type       | Options                        |
+| ------------------- | ---------- | ------------------------------ |
+| genre                | string | null: false                       |
+
+### Association
+has_many :items
