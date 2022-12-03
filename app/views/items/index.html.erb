@@ -12,7 +12,12 @@
       <div class="rating">
       評価
       </div>
-    </div> 
+    </div>
+    <% @items.each do |item| %>
+      <li class="title-lists">
+        <%= item.title %>
+      </li>
+    <% end %>
   </div>
 </div>
 
