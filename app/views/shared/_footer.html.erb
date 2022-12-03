@@ -1,8 +1,11 @@
 <%# 下部タイトル入力打ち込み用 %>
 
 <div class="footer-main">
+  <% if user_signed_in? %>
   <div class="footer-form">
-    <input class="form-title" placeholder= "type a title">
+    <input class="form-title" placeholder= "追加したいタイトルを入力してください">
   </div>
   <input class="form-submit" type="submit" value="送信">
+  <% else %>
+  <% end %>
 </div>
