@@ -2,10 +2,12 @@
 
 <div class="footer-main">
   <% if user_signed_in? %>
-  <div class="footer-form">
-    <input class="form-title" placeholder= "追加したいタイトルを入力してください">
-  </div>
-  <input class="form-submit" type="submit" value="送信">
+  <%= form_with model: @item, url: items_path, method: :post, local: true do |f| %>
+    <div class="footer-form">
+      <%= f.text_area :title, class:"form-title", placeholder:"追加したいタイトルを入力してください" %>
+      <input class="form-submit" type="submit" value="送信">
+    </div>
+  <% end %>
   <% else %>
   <% end %>
 </div>

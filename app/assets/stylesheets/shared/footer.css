@@ -6,21 +6,25 @@
 }
 
 .footer-form {
-  background-color: white;
+  /* background-color: white; */
+  display: flex;
   width: 100%;
 }
 
 
 .form-title {
-  border: none;
-  height: 50px;
-  width: 100%;
-  padding-left: 10px;
+  width: calc(100vw - 10vw);
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  display: flex;
+  resize: none;
 }
 
 .form-submit {
   background-color: #38AEF0;
   border: none;
+  border-radius: 8px;
   color: white;
   font-size: 16px;
   height: 50px;
