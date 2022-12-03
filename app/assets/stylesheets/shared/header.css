@@ -1,0 +1,51 @@
+* {
+  box-sizing: border-box;
+}
+
+.top-page-header {
+
+}
+
+.nav {
+  font-size: 18px;
+  background-color: antiquewhite;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.lists-left {
+  display: flex;
+  list-style: none;
+}
+
+.lists-right {
+  display: flex;
+  list-style: none;
+}
+
+.logout {
+  text-decoration: none;
+  color: #333333;
+}
+
+.login {
+  text-decoration: none;
+  margin-right: 2vw;
+  color: #333333;
+}
+
+.sign-up {
+  text-decoration: none;
+  color: #333333;
+  padding-right: 2vw;
+}
+
+.search-form {
+  padding-right: 2vw;
+}
+
+.search-button {
+  /* padding-right: 10px; */
+}
