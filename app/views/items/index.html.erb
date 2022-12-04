@@ -15,7 +15,11 @@
     </div>
     <% @items.each do |item| %>
       <li class="title-lists">
-        <%= item.title %>
+        <%= link_to items_path(item) do %>
+          <h4 class="title-list">
+            <%= item.title %>
+          </h4>
+        <% end %>
       </li>
     <% end %>
   </div>
