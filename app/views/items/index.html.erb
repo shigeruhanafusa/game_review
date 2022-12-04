@@ -12,7 +12,16 @@
       <div class="rating">
       評価
       </div>
-    </div> 
+    </div>
+    <% @items.each do |item| %>
+      <li class="title-lists">
+        <%= link_to items_path(item) do %>
+          <h4 class="title-list">
+            <%= item.title %>
+          </h4>
+        <% end %>
+      </li>
+    <% end %>
   </div>
 </div>
 

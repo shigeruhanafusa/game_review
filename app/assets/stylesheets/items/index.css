@@ -18,3 +18,16 @@
 .genre {
   margin-right: 10vw;
 }
+
+.title-lists {
+  list-style: none;
+}
+
+.title-list {
+  font-size: 2vh;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(21, 21, 21);
+}
