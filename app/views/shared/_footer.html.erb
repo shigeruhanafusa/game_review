@@ -4,7 +4,7 @@
   <% if user_signed_in? %>
   <%= form_with model: @item, url: items_path, method: :post, local: true do |f| %>
     <div class="footer-form">
-      <%= f.text_area :title, class:"form-title", placeholder:"追加したいタイトルを入力してください" %>
+      <%= f.text_area :"", class:"form-title", placeholder:"追加したいタイトルを入力してください" %>
       <input class="form-submit" type="submit" value="送信">
     </div>
   <% end %>
