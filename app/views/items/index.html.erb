@@ -2,14 +2,17 @@
 
 <div class="index-main">
   <div class="main-games">
+    <%# <div class="post-game">
+      投稿ページ
+    </div> %>
     <div class="game">
-      <div class="title">
+      <div class="index-title">
       タイトル名
       </div>
-      <div class="genre">
+      <div class="index-genre">
       ジャンル
       </div>
-      <div class="rating">
+      <div class="index-rating">
       評価
       </div>
     </div>
@@ -24,5 +27,8 @@
     <% end %>
   </div>
 </div>
+<%= link_to(new_item_path, class: 'post-btn') do %>
+  <span class='post-text'>投稿ページ</span>
+  <%= image_tag ('yuubin_post.png') , size: '100x70' ,class: "btn-icon" %>
+<% end %>
 
-<%= render "shared/footer" %>

@@ -1,3 +1,26 @@
 <%= render "shared/header" %>
 
-<div>Hallo World</div>
+<div class="show-main">
+  <div class="show-game">
+    <div class="show-title">
+      <div class="title">
+        <%= @item.title %>
+      </div>
+    </div>
+    <div class="show-total">
+      <div class="synopsis">
+        あらすじ
+      </div>
+      <div class="video">
+        映像
+      </div>
+    </div>
+    <div class="ratings">
+      <div class="rating">
+        評価
+      </div>
+    </div>
+  </div>
+</div>
+
+<%= render "shared/footer" %>
