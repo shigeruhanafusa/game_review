@@ -8,6 +8,7 @@ class ItemsController < ApplicationController
   end
 
   def create
+    binding.pry
     @item = Item.create(item_params)
     if @item.valid?
       @item.save
@@ -24,7 +25,7 @@ class ItemsController < ApplicationController
   private
 
   def item_params
-    params.permit(:title).merge(user_id: current_user.id)
+    params.require(:item).permit(:title, :text).merge(user_id: current_user.id)
   end
 
 end

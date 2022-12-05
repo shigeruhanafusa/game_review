@@ -1,0 +1,18 @@
+<%= render "shared/header" %>
+
+<div class="contents row">
+  <div class="container">
+    <h3>投稿する</h3>
+    <%= form_with model: @item, url: items_path(@item), local: true do |form| %>
+      <div class="post-title">
+        <%= form.text_field :title, placeholder: "ゲームタイトル" %>
+      </div>
+      <div class="post-text">
+        <%= form.text_area :text, placeholder: "あらすじ" %>
+      </div>
+      <div class="post-submit">
+        <%= form.submit "投稿" %>
+      </div>
+    <% end %>
+  </div>
+</div>
