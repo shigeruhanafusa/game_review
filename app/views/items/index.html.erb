@@ -2,9 +2,6 @@
 
 <div class="index-main">
   <div class="main-games">
-    <%# <div class="post-game">
-      投稿ページ
-    </div> %>
     <div class="game">
       <div class="index-title">
       タイトル名
@@ -16,19 +13,20 @@
       評価
       </div>
     </div>
-    <% @items.each do |item| %>
-      <li class="title-lists">
-        <%= link_to item_path(item) do %>
-          <h4 class="title-list">
-            <%= item.title %>
-          </h4>
-        <% end %>
-      </li>
-    <% end %>
+    <div class="main-title-lists">
+      <% @items.each do |item| %>
+        <li class="title-lists">
+          <%= link_to item_path(item) do %>
+            <div class="title-list">
+              <%= item.title %>
+            </div>
+          <% end %>
+        </li>
+      <% end %>
+    </div>
   </div>
 </div>
 <%= link_to(new_item_path, class: 'post-btn') do %>
-  <span class='post-text'>投稿ページ</span>
+  <span class='index-post-text'>投稿ページ</span>
   <%= image_tag ('yuubin_post.png') , size: '100x70' ,class: "btn-icon" %>
 <% end %>
-

@@ -1,0 +1,62 @@
+/******************************************** 
+  リセット用
+*********************************************/
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+ul,
+li,
+h1,
+h2,
+p,
+div {
+  margin: 0;
+  padding: 0;
+}
+
+
+.contents.row {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+
+}
+
+.container {
+  width: 600px;
+  height: 300px;
+  margin: 40px auto;
+  padding: 30px;
+  box-shadow: 0 0 10px rgba(41, 41, 41, 0.2);
+  background-color: rgb(235, 255, 255);
+  box-sizing: border-box;
+}
+
+.container input {
+  width: 100%;
+  height: 100%;
+}
+
+.container textarea {
+  width: 100%;
+  height: 100%;
+}
+
+.post-title {
+  width: 100%;
+}
+
+.post-text {
+  width: 100%;
+  height: 100px;
+  padding-top: 10px;
+}
+
+.post-submit {
+  width: 20%;
+  margin: auto;
+  padding-top: 25px;
+}
