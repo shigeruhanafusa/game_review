@@ -80,7 +80,6 @@ has_many :items
 | genre_id             | integer | null: false                       |
 | user                | references | null: false, foreign_key: true |
 | rating                | references | null: false, foreign_key: true |
-| category                | references | null: false, foreign_key: true |
 
 ### Association
 belongs_to :user

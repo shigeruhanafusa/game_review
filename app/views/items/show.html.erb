@@ -23,7 +23,16 @@
         評価
       </div>
     </div>
+    <div class="footer-main">
+      <% if user_signed_in? %>
+      <%= form_with model: @rating, url: item_ratings_path(@item.id), method: :post, local: true do |f| %>
+        <div class="footer-form">
+          <%= f.text_area :evaluation, class:"form-title", placeholder:"追加したい評価を入力してください" %>
+          <input class="form-submit" type="submit" value="送信">
+        </div>
+      <% end %>
+      <% else %>
+      <% end %>
+    </div>
   </div>
 </div>
-
-<%= render "shared/footer" %>

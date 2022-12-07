@@ -1,6 +1,6 @@
 .show-main {
   background-color: rgb(235, 255, 255);
-  height: calc(100vh - 200px);
+  height: calc(100vh - 110px);
   overflow: scroll;
 }
 
@@ -26,4 +26,39 @@
   display: flex;
   padding: 15vh 0 0 20vw;
   font-size: 24px;
+}
+
+.footer-main {
+  /* background-color: #DDDDDD; */
+  height: 90px;
+  padding: 420px 70vw;
+  display: flex;
+  position: fixed;
+}
+
+.footer-form {
+  /* background-color: white; */
+  display: flex;
+  width: 30%;
+}
+
+
+.form-title {
+  width: calc(100vw - 10vw);
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  display: flex;
+  resize: none;
+}
+
+.form-submit {
+  background-color: #38AEF0;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-size: 16px;
+  height: 50px;
+  margin-left: 15px;
+  padding: 0 20px;
 }
