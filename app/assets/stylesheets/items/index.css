@@ -31,7 +31,7 @@ div {
 }
 
 .game {
-  font-size: 20px;
+  font-size: 24px;
   padding: 40px 0 0 20vw;
   display: flex;
 }
@@ -61,14 +61,21 @@ div {
 
 .title-lists {
   display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  flex-direction: column;
-  height: 40px;
+  justify-content: flex-start;
+  height: 25px;
+  margin-top: 20px;
+  
 }
 
 .title-list {
+  width: 200px;
   font-size: 18px;
+  word-wrap: break-word
+}
+
+.genre-list {
+  font-size: 18px;
+  padding-left: 114px;
 }
 
 a {
