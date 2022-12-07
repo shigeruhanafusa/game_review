@@ -55,7 +55,7 @@ SNSの連携やYoutubeと連携してPVを引っ張ってきたりしていき�
 # 開発環境
 
 ・HTML/CSS<br>
-・Java<br>
+・Java/ruby<br>
 ・VScode/Eclipse<br>
 ・Github<br>
 
@@ -77,6 +77,7 @@ has_many :items
 | ------------------- | ---------- | ------------------------------ |
 | title         | string    | null: false                    |
 | text          | text      | null: false                    |
+| genre_id             | integer | null: false                       |
 | user                | references | null: false, foreign_key: true |
 | rating                | references | null: false, foreign_key: true |
 | category                | references | null: false, foreign_key: true |
@@ -84,7 +85,6 @@ has_many :items
 ### Association
 belongs_to :user
 belongs_to :rating
-belongs_to :category
 
 
 
@@ -94,15 +94,6 @@ belongs_to :category
 | name         | string     | null: false                    |
 | rank             | integer    | null: false                    |
 
-
-### Association
-has_many :items
-
-
-# categoriesテーブル
-| Column              | Type       | Options                        |
-| ------------------- | ---------- | ------------------------------ |
-| genre                | string | null: false                       |
 
 ### Association
 has_many :items
