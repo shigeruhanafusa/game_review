@@ -44,7 +44,7 @@ SNSの連携やYoutubeと連携してPVを引っ張ってきたりしていき�
 
 # データベース設計
 
-[![Image from Gyazo](https://i.gyazo.com/aaec77a11f058a98909f6e838dd7361d.png)](https://gyazo.com/aaec77a11f058a98909f6e838dd7361d)
+[![Image from Gyazo](https://i.gyazo.com/b1a868d29a6b9bdde5140c7a0f915391.png)](https://gyazo.com/b1a868d29a6b9bdde5140c7a0f915391)
 
 # 画面遷移図
 
@@ -79,7 +79,7 @@ has_many :items
 | text          | text      | null: false                    |
 | genre_id             | integer | null: false                       |
 | user                | references | null: false, foreign_key: true |
-| rating                | references | null: false, foreign_key: true |
+
 
 ### Association
 belongs_to :user
@@ -90,8 +90,9 @@ belongs_to :rating
 # ratingsテーブル
 | Column              | Type       | Options                        |
 | ------------------- | ---------- | ------------------------------ |
-| name         | string     | null: false                    |
+| evaluation         | string     | null: false                    |
 | rank             | integer    | null: false                    |
+| item                | references | null: false, foreign_key: true |
 
 
 ### Association
