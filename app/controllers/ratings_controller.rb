@@ -5,6 +5,7 @@ class RatingsController < ApplicationController
     @rating = Rating.new(rating_params)
     if @rating.valid?
       @rating.save
+      redirect_to item_path(@item[:id])
     else
       render :new
     end
@@ -14,7 +15,7 @@ class RatingsController < ApplicationController
   private
 
   def rating_params
-    params.require(:rating).permit(:evaluation).merge(item_id: params[:item_id])
+    params.permit(:evaluation).merge(item_id: params[:item_id])
   end
 
 end

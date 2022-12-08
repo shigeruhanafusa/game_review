@@ -23,11 +23,13 @@
         評価
       </div>
     </div>
-    <% @item.ratings.each do |rating| %>
-      <div class="synopsis-evaluation">
-        <%= rating.evaluation %>
-      </div>
-    <% end %>
+    <div class="main-synopsis">
+      <% @item.ratings.each do |rating| %>
+        <div class="synopsis-evaluation">
+          <%= rating.evaluation %>
+        </div>
+      <% end %>
+    </div>
     <div class="footer-main">
       <% if user_signed_in? %>
       <%= form_with model: @rating, url: item_ratings_path(@item.id), method: :post, local: true do |f| %>
