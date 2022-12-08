@@ -49,7 +49,6 @@ test:
 #
 production:
   <<: *default
-  adapter: mysql2
   database: game_review_production
   username: root
   password: <%= ENV['DATABASE_PASSWORD'] %>
