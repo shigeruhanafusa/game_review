@@ -27,7 +27,7 @@ div {
 
 .container {
   width: 600px;
-  height: 300px;
+  height: 330px;
   margin: 40px auto;
   padding: 30px;
   box-shadow: 0 0 10px rgba(41, 41, 41, 0.2);
@@ -59,4 +59,8 @@ div {
   width: 20%;
   margin: auto;
   padding-top: 25px;
+}
+
+.genre-select {
+  margin-top: 9px;
 }

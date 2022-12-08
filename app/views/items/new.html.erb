@@ -8,8 +8,9 @@
         <%= form.text_field :title, placeholder: "ゲームタイトル" %>
       </div>
       <div class="post-text">
-        <%= form.text_area :text, placeholder: "あらすじ" %>
+        <%= form.text_area :text, placeholder: "軽くゲーム内容" %>
       </div>
+        <%= form.collection_select(:genre_id, Genre.all, :id, :name, {}, {class:"genre-select"}) %>
       <div class="post-submit">
         <%= form.submit "投稿" %>
       </div>

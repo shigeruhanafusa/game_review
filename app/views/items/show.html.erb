@@ -9,18 +9,37 @@
     </div>
     <div class="show-total">
       <div class="synopsis">
-        あらすじ
+        ゲーム内容
       </div>
       <div class="video">
         映像
       </div>
+    </div>
+    <div class="synopsis-text">
+      <%= @item.text %>
     </div>
     <div class="ratings">
       <div class="rating">
         評価
       </div>
     </div>
+    <div class="main-synopsis">
+      <% @item.ratings.each do |rating| %>
+        <div class="synopsis-evaluation">
+          <%= rating.evaluation %>
+        </div>
+      <% end %>
+    </div>
+    <div class="footer-main">
+      <% if user_signed_in? %>
+      <%= form_with model: @rating, url: item_ratings_path(@item.id), method: :post, local: true do |f| %>
+        <div class="footer-form">
+          <%= f.text_area :evaluation, class:"form-title", placeholder:"追加したい評価を入力してください" %>
+          <input class="form-submit" type="submit" value="送信">
+        </div>
+      <% end %>
+      <% else %>
+      <% end %>
+    </div>
   </div>
 </div>
-
-<%= render "shared/footer" %>
