@@ -1,4 +1,5 @@
 class ItemsController < ApplicationController
+
   def index
     @items = Item.all
   end
@@ -19,12 +20,12 @@ class ItemsController < ApplicationController
 
   def show
     @item = Item.find(params[:id])
+    @ratings = @item.ratings.includes(:evaluation)
   end
 
   private
 
   def item_params
-    binding.pry
     params.require(:item).permit(:title, :text, :genre_id).merge(user_id: current_user.id)
   end
 

@@ -12,26 +12,32 @@
 .show-total {
   display: flex;
   justify-content: space-around;
-  padding-right: 14vw;
+  padding-right: 14.5vw;
   font-size: 24px;
 }
 
 .synopsis-text {
   width: 40%;
-  padding-left: 20vw;
+  padding-left: 19.3vw;
+  word-wrap: break-word
+}
+
+.synopsis-evaluation {
+  width: 40%;
+  padding-left: 19.5vw;
   word-wrap: break-word
 }
 
 .ratings {
   display: flex;
-  padding: 15vh 0 0 20vw;
+  padding: 15vh 0 0 19.5vw;
   font-size: 24px;
 }
 
 .footer-main {
   /* background-color: #DDDDDD; */
   height: 90px;
-  padding: 420px 70vw;
+  padding: 400px 70vw;
   display: flex;
   position: fixed;
 }

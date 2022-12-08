@@ -1,9 +1,4 @@
 class RatingsController < ApplicationController
-  
-  def index
-    @rating = Rating.new
-    @item = Item.find(params[:item_id])
-  end
 
   def create
     @item = Item.find(params[:item_id])
@@ -19,7 +14,7 @@ class RatingsController < ApplicationController
   private
 
   def rating_params
-    params.permit(:evaluation).merge(item_id: params[:item_id])
+    params.require(:rating).permit(:evaluation).merge(item_id: params[:item_id])
   end
 
 end
