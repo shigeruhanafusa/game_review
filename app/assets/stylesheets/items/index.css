@@ -34,20 +34,21 @@ div {
   font-size: 24px;
   padding: 40px 0 0 20vw;
   display: flex;
+  /* background-color: #3ccace; */
 }
 
 .index-title {
-  margin-right: 10vw;
+  margin-right: 190px;
   
 }
 
 .index-genre {
-  margin-right: 10vw;
+  margin-right: 190px;
   
 }
 
 .index-rating {
-  margin-right: 10vw;
+  /* margin-right: 10vw; */
   
 }
 
