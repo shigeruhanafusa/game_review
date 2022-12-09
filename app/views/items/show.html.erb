@@ -6,6 +6,23 @@
       <div class="title">
         <%= @item.title %>
       </div>
+      <% if user_signed_in? %>
+        <% if current_user.already_liked?(@item) %>
+          <%= link_to(item_like_path(@item), method: :delete ,class: 'good-btn') do %>
+            <span class='show-good'></span>
+            <%= image_tag ('hand_good.png') , size: '100x70' ,class: "good-icon" %>
+          <% end %>
+        <% else %>
+          <%= link_to(item_likes_path(@item, @like), method: :post ,class: 'good-btn') do %>
+            <span class='show-good'></span>
+            <%= image_tag ('hand_good.png') , size: '100x70' ,class: "good-icon" %>
+          <% end %>
+        <% end %>
+      <% end %>
+      <div class="good-count">
+        <span class='show-star'><%= @item.likes.count %></span>
+        <%= image_tag ('star_orange.png') , size: '100x70' ,class: "star-icon" %>
+      </div>
     </div>
     <div class="show-total">
       <div class="synopsis">
