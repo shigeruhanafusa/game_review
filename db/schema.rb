@@ -33,7 +33,7 @@ ActiveRecord::Schema.define(version: 2022_12_09_123434) do
 
   create_table "ratings", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "evaluation", null: false
-    t.integer "rank"
+    t.float "rate"
     t.bigint "item_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
