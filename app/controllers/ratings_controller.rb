@@ -1,4 +1,5 @@
 class RatingsController < ApplicationController
+  
   def create
     @item = Item.find(params[:item_id])
     @rating = Rating.new(rating_params)
