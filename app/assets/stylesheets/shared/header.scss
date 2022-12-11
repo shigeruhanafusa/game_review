@@ -17,9 +17,16 @@ div {
   padding: 0;
 }
 
+.top-page-header {
+  
+}
 
 .search-bar-contents {
-  background-color: rgb(244, 217, 181);
+  width: 100;
+  background-image: image-url('castle_floating.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
   height: calc(110px);
   padding-top: 15px;
 }
@@ -50,22 +57,26 @@ li {
   list-style: none;
 }
 
+.title-name {
+  color: antiquewhite;
+}
+
 .hp-name {
   padding-left: 30px;
 }
 
 .logout {
-  color: #333333;
+  color: antiquewhite;
   margin-right: 30px;
 }
 
 .login {
-  color: #333333;
+  color: antiquewhite;
   margin-right: 30px;
 }
 
 .sign-up {
-  color: #333333;
+  color: antiquewhite;
   margin-right: 30px;
 }
 

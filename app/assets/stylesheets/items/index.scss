@@ -20,13 +20,16 @@ div {
 
 
 .index-main {
-  background-color: rgb(235, 255, 255);
+  width: 100;
+  background-image: image-url('white_back.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
   height: calc(100vh - 110px);
 }
 
 .post-game {
-  background-color: aquamarine;
-  display: flex;
+  // display: flex;
   justify-content: center;
 }
 
@@ -54,7 +57,6 @@ div {
 
 .main-title-lists {
   height: calc(100%);
-  background-color: rgb(235, 255, 255);
   padding-left: 20vw;
   padding-top: 10px;
   overflow: scroll;
@@ -86,7 +88,7 @@ a {
 
 .post-btn {
   width: 120px;
-  background: #3ccace;
+  background: rgba(41, 41, 41, 0.2);;
   text-align: center;
   border-radius: 4%;
   bottom: 32px;
@@ -96,7 +98,7 @@ a {
 }
 
 .index-post-text {
-  color: #fff;
+  color: rgb(19, 18, 18);
   display: block;
   font-size: 18px;
   text-decoration: none;

@@ -1,5 +1,10 @@
 .show-main {
-  background-color: rgb(235, 255, 255);
+  width: 100;
+  height: calc(90vh);
+  background-image: image-url('white_back.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
   height: calc(100vh - 110px);
   overflow: scroll;
 }
@@ -16,7 +21,7 @@
 .good-btn {
   width: 50px;
   height: 50px;
-  background: #3ccace;
+  background-color: rgba(235, 255, 255, 0.5);
   text-align: center;
   border-radius: 4%;
   margin-top: 45px;
@@ -39,16 +44,15 @@
 .good-count {
   width: 50px;
   height: 50px;
-  background: #3ccace;
+  background-color: rgba(235, 255, 255, 0.5);
   text-align: center;
   border-radius: 4%;
   margin-top: 45px;
   margin-left: 10px;
-  
 }
 
 .show-star {
-  color: #fff;
+  color: rgb(21, 21, 21);
   display: block;
   font-size: 13px;
   text-decoration: none;
