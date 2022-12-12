@@ -1,0 +1,27 @@
+<%= render "shared/header" %>
+
+<div class="rating-contents row">
+  <div class="rating-container">
+    <h3>投稿する</h3>
+    <%= form_with model: [@item,@rating], url: item_ratings_path(@item), method: :post , local: true do |form| %>
+      <div class="rating-title">
+        <%= form.text_field :evaluation, placeholder: "評価(戦闘・ストーリー等)" %>
+      </div>
+      <div class="rating-text">
+        <%= form.radio_button :rate, :"1" %>
+        <div class="radio-num">1</div>
+        <%= form.radio_button :rate, :"2" %>
+        <div class="radio-num">2</div>
+        <%= form.radio_button :rate, :"3" %>
+        <div class="radio-num">3</div>
+        <%= form.radio_button :rate, :"4" %>
+        <div class="radio-num">4</div>
+        <%= form.radio_button :rate, :"5" %>
+        <div class="radio-num">5</div>
+      </div>
+      <div class="rating-submit">
+        <%= form.submit "投稿" %>
+      </div>
+    <% end %>
+  </div>
+</div>

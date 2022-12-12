@@ -9,9 +9,9 @@
       <div class="index-genre">
       ジャンル
       </div>
-      <div class="index-rating">
-      評価
-      </div>
+      <%# <div class="index-rating"> %>
+      <%# 評価 %>
+      <%# </div> %>
     </div>
     <div class="main-title-lists">
       <% @items.each do |item| %>
@@ -24,6 +24,11 @@
           <div class="genre-list">
             <%= item.genre.name %>
           </div>
+          <%# <% @ratings.each do |r| %>
+            <%# <div class="rating-rate"> %>
+              <%# <%= r.rate %>
+            <%# </div> %>
+          <%# <% end %>
         </li>
       <% end %>
     </div>

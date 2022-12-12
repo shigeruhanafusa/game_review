@@ -18,7 +18,7 @@ div {
 }
 
 
-.contents.row {
+.rating-contents.row {
   display: flex;
   justify-content: center;
   text-align: center;
@@ -31,7 +31,7 @@ div {
 
 }
 
-.container {
+.rating-container {
   width: 600px;
   height: 330px;
   margin: 40px auto;
@@ -41,27 +41,26 @@ div {
   box-sizing: border-box;
 }
 
-.container input {
+.rating-container input {
   width: 100%;
   height: 100%;
 }
 
-.container textarea {
-  width: 100%;
-  height: 100%;
-}
-
-.post-title {
+.rating-title {
   width: 100%;
 }
 
-.post-text {
-  width: 100%;
-  height: 100px;
+.rating-text {
+  display: flex;
+  padding-left: 40px;
   padding-top: 10px;
 }
 
-.post-submit {
+.radio-num {
+  padding-right: 70px;
+}
+
+.rating-submit {
   width: 20%;
   margin: auto;
   padding-top: 25px;
