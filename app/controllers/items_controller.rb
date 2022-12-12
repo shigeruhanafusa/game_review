@@ -2,6 +2,7 @@ class ItemsController < ApplicationController
 
   def index
     @items = Item.all
+    @ratings = Rating.all
   end
 
   def new
